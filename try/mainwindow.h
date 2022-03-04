@@ -48,7 +48,10 @@ public:
     //改变还原图标
     void changeIcon();
 
-    //设置鼠标位于边缘处的样式
+    //设置鼠标位于边缘处的样
+    int mouseState;
+    int MOUSE_LEFT = 1, MOUSE_TOP = 2, MOUSE_RIGHT = 4, MOUSE_BOTTOM = 8,
+        MOUSE_LEFT_TOP = 3, MOUSE_LEFT_BOTTOM = 9, MOUSE_RIGHT_TOP = 6, MOUSE_RIGHT_BOTTOM = 12;
 
 private:
     Ui::MainWindow* ui;

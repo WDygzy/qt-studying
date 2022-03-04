@@ -63,7 +63,7 @@ public:
         mainLayout->setSpacing(0);
         mainLayout->setObjectName(QString::fromUtf8("mainLayout"));
         mainLayout->setSizeConstraint(QLayout::SetDefaultConstraint);
-        mainLayout->setContentsMargins(-1, 0, -1, -1);
+        mainLayout->setContentsMargins(2, 2, 2, 2);
         titleBar = new QWidget(mainwidget);
         titleBar->setObjectName(QString::fromUtf8("titleBar"));
         QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
@@ -71,8 +71,8 @@ public:
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(titleBar->sizePolicy().hasHeightForWidth());
         titleBar->setSizePolicy(sizePolicy);
-        titleBar->setMinimumSize(QSize(0, 40));
-        titleBar->setMaximumSize(QSize(16777215, 40));
+        titleBar->setMinimumSize(QSize(0, 42));
+        titleBar->setMaximumSize(QSize(16777215, 42));
         horizontalLayout = new QHBoxLayout(titleBar);
         horizontalLayout->setSpacing(0);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));

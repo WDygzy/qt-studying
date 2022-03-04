@@ -58,8 +58,17 @@
            <property name="sizeConstraint">
             <enum>QLayout::SetDefaultConstraint</enum>
            </property>
+           <property name="leftMargin">
+            <number>2</number>
+           </property>
            <property name="topMargin">
-            <number>0</number>
+            <number>2</number>
+           </property>
+           <property name="rightMargin">
+            <number>2</number>
+           </property>
+           <property name="bottomMargin">
+            <number>2</number>
            </property>
            <item>
             <widget class="QWidget" name="titleBar" native="true">
@@ -72,13 +81,13 @@
              <property name="minimumSize">
               <size>
                <width>0</width>
-               <height>40</height>
+               <height>42</height>
               </size>
              </property>
              <property name="maximumSize">
               <size>
                <width>16777215</width>
-               <height>40</height>
+               <height>42</height>
               </size>
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout">
@@ -183,7 +192,7 @@
             <widget class="QWidget" name="mainDisplayWidget" native="true">
              <layout class="QVBoxLayout" name="verticalLayout_5">
               <item>
-               <layout class="QVBoxLayout" name="displayLayout" stretch="">
+               <layout class="QVBoxLayout" name="displayLayout">
                 <property name="sizeConstraint">
                  <enum>QLayout::SetFixedSize</enum>
                 </property>
