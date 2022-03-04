@@ -37,6 +37,9 @@ MainWindow::MainWindow(QWidget* parent)
 
     //设置个人菜单
     menu(ui, this);
+
+    //设置窗口最前面
+    // this->setWindowFlag(Qt::WindowStaysOnTopHint);
 }
 
 MainWindow::~MainWindow()
@@ -130,11 +133,15 @@ void MainWindow::mouseReleaseEvent(QMouseEvent* event)
     isPressButton = false;
 
     //窗口拖到上方最大化
-    if (thisGeometry.top() <= 0 && event->globalY() <= 0) {
+    if (thisGeometry.top() < 0 && event->globalY() == 0) {
         preGeometry = this->frameGeometry();
         this->move(clientRect.x(), clientRect.y());
         this->resize(clientRect.width(), clientRect.height());
         isMaxWindow = true;
+    } else if ((mouseState == 2 && thisGeometry.top() == 0 && event->globalY() == 0)
+        || (mouseState == 8 && thisGeometry.bottom() == clientRect.bottom() && event->globalY() == clientRect.bottom())) {
+        this->move(thisGeometry.x(), clientRect.y());
+        this->resize(thisGeometry.width(), clientRect.height());
     }
     changeIcon();
 }

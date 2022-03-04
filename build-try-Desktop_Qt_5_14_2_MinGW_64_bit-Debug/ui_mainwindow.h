@@ -84,14 +84,16 @@ public:
 
         Min = new QPushButton(titleBar);
         Min->setObjectName(QString::fromUtf8("Min"));
-        Min->setMinimumSize(QSize(32, 32));
+        Min->setMinimumSize(QSize(40, 40));
+        Min->setMaximumSize(QSize(40, 40));
         Min->setStyleSheet(QString::fromUtf8(""));
 
         horizontalLayout->addWidget(Min);
 
         Max = new QPushButton(titleBar);
         Max->setObjectName(QString::fromUtf8("Max"));
-        Max->setMinimumSize(QSize(32, 32));
+        Max->setMinimumSize(QSize(40, 40));
+        Max->setMaximumSize(QSize(40, 40));
         Max->setStyleSheet(QString::fromUtf8(""));
 
         horizontalLayout->addWidget(Max);
@@ -103,7 +105,8 @@ public:
         sizePolicy1.setVerticalStretch(0);
         sizePolicy1.setHeightForWidth(Close->sizePolicy().hasHeightForWidth());
         Close->setSizePolicy(sizePolicy1);
-        Close->setMinimumSize(QSize(32, 32));
+        Close->setMinimumSize(QSize(40, 40));
+        Close->setMaximumSize(QSize(40, 40));
         Close->setStyleSheet(QString::fromUtf8(""));
         Close->setCheckable(false);
         Close->setAutoRepeat(false);

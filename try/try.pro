@@ -41,4 +41,5 @@ LIBS += -LE:\Users\chenyu\anaconda3\envs\sdpo\libs -l_tkinter -lpython3 -lpython
 
 DISTFILES += \
     变量名.txt \
+    窗口状态.png \
     鼠标样式.png
