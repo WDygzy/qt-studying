@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/menu">
+        <file>max.png</file>
+        <file>min.png</file>
+        <file>close.png</file>
+        <file>close_thin.png</file>
+        <file>close_thin_thin.png</file>
+        <file>down.png</file>
+        <file>up.png</file>
+        <file>close_smaller.png</file>
+        <file>up_result.png</file>
+    </qresource>
+</RCC>
